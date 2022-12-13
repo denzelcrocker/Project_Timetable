@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Project_Timetable"
         tools:targetApi="31">
         <activity
+            android:name=".Edit_actual"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Mask"
             android:exported="false">
             <meta-data
