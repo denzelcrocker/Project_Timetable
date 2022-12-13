@@ -12,10 +12,10 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class Adapder_actual extends BaseAdapter {
+public class Adapter extends BaseAdapter {
     private Context mContext;
-    List<mask_actual> maskList;
-    public Adapder_actual(Context mContext, List<mask_actual> listProduct) {
+    List<Mask> maskList;
+    public Adapter(Context mContext, List<Mask> listProduct) {
         this.mContext = mContext;
         this.maskList = listProduct;
     }
@@ -35,19 +35,17 @@ public class Adapder_actual extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup)
     {
-        View v = View.inflate(mContext,R.layout.activity_mask_actual,null);
+        View v = View.inflate(mContext,R.layout.activity_mask,null);
         TextView Id_lesson = v.findViewById(R.id.numberOfLesson);
         TextView Lesson = v.findViewById(R.id.lessonText);
         TextView Classroom = v.findViewById(R.id.classroomText);
-        TextView Subgroup = v.findViewById(R.id.subgroupText);
-        TextView Count = v.findViewById(R.id.countText);
+        TextView Teacher = v.findViewById(R.id.teacherText);
 
-        mask_actual mask = maskList.get(i);
+        Mask mask = maskList.get(i);
         Id_lesson.setText(Integer.toString(mask.getId_lesson()).toString());
         Lesson.setText(mask.getLesson());
         Classroom.setText(mask.getClassroom());
-        Subgroup.setText(mask.getSubgroup());
-        Count.setText(mask.getCount());
+        Teacher.setText(mask.getTeacher());
         return v;
     }
 }

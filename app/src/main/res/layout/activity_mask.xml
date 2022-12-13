@@ -7,8 +7,8 @@
 
     <TextView
         android:id="@+id/numberOfLesson"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
         android:textAlignment="center"
         android:textSize="65dp"
         android:textColor="@color/black"
@@ -20,8 +20,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:textColor="@color/black"
+        android:textSize="18dp"
         app:layout_constraintStart_toEndOf="@+id/numberOfLesson"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,9 +30,10 @@
         android:id="@+id/classroomText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
         android:textColor="@color/black"
+        android:textSize="18dp"
         app:layout_constraintStart_toEndOf="@+id/numberOfLesson"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,9 +42,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="32dp"
         android:text=""
         android:textColor="@color/black"
+        android:textSize="18dp"
         app:layout_constraintStart_toEndOf="@+id/numberOfLesson"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
