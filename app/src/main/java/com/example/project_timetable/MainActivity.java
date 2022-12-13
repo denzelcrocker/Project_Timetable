@@ -67,8 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 while ((line = reader.readLine()) != null) {
                     result.append(line);
                 }
-                return result.toString();
-
+                return result.toString(); //значит только пермиссия на интернет нужна была!
 
             } catch (Exception exception) {
                 return null;
@@ -125,6 +124,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void Go() {
-        startActivity(new Intent(this, Edit_actual.class));
+        startActivity(new Intent(this, Edit_actual_timetable.class));
     }
 }

@@ -10,8 +10,8 @@ public class mask_actual implements Parcelable{
     private String Subgroup;
     private String Count;
 
-    public mask_actual(int ID_lesson, String Lesson, String Classroom, String Subgroup, String Count) {
-        this.Id_lesson = ID_lesson;
+    public mask_actual(int Id_lesson, String Lesson, String Classroom, String Subgroup, String Count) {
+        this.Id_lesson = Id_lesson;
         this.Lesson = Lesson;
         this.Classroom = Classroom;
         this.Subgroup = Subgroup;

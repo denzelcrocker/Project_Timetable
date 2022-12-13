@@ -6,8 +6,8 @@
     android:layout_height="match_parent">
     <TextView
         android:id="@+id/numberOfLesson"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:textAlignment="center"
         android:textSize="65dp"
         android:text = "1"

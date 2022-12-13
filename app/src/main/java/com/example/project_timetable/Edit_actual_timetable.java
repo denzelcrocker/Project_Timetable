@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Edit_actual extends AppCompatActivity {
+public class Edit_actual_timetable extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_actual);
+        setContentView(R.layout.activity_edit_actual_timetable);
     }
 }

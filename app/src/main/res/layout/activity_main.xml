@@ -7,23 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="45dp"
-        android:textColor="@color/black"
-        android:text="Расписание"
-        tools:ignore="MissingConstraints" />
     <TableLayout
         android:id="@+id/userWindow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text"
         app:layout_constraintTop_toTopOf="parent">
         <TableRow>
 
@@ -31,7 +20,7 @@
                 android:id="@+id/monday"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/styles"
                 android:onClick="mondayClick"
@@ -44,7 +33,7 @@
                 android:id="@+id/tuesday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/styles"
                 android:onClick="tuesdayClick"
                 android:text="Вторник"
@@ -57,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/styles"
                 android:onClick="wednesdayClick"
                 android:text="Среда"
@@ -111,7 +100,7 @@
     <ListView
         android:id="@+id/listActual"
         android:layout_width="414dp"
-        android:layout_height="535dp"
+        android:layout_height="520dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userWindow" />
