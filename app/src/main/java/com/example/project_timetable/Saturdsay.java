@@ -98,7 +98,6 @@ public class Saturdsay extends AppCompatActivity {
         }
     }
     public void Go() {
-        startActivity(new Intent(this, Edit_saturday.class));
     }
 
     public void backClick(View view) {

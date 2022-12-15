@@ -98,7 +98,6 @@ public class Friday extends AppCompatActivity {
         }
     }
     public void Go() {
-        startActivity(new Intent(this, Edit_friday.class));
     }
 
     public void backClick(View view) {
