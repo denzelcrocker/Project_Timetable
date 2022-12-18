@@ -17,7 +17,7 @@ public class DataModal_Actual {
     }
 
     public void setLesson(String lesson) {
-        Lesson = lesson;
+        this.Lesson = lesson;
     }
 
     public String getClassroom() {
@@ -25,7 +25,7 @@ public class DataModal_Actual {
     }
 
     public void setClassroom(String classroom) {
-        Classroom = classroom;
+        this.Classroom = classroom;
     }
 
     public String getSubgroup() {
@@ -33,7 +33,7 @@ public class DataModal_Actual {
     }
 
     public void setSubgroup(String subgroup) {
-        Subgroup = subgroup;
+        this.Subgroup = subgroup;
     }
 
     public String getCount() {
@@ -41,6 +41,6 @@ public class DataModal_Actual {
     }
 
     public void setCount(String count) {
-        Count = count;
+        this.Count = count;
     }
 }

@@ -11,39 +11,38 @@
         android:id="@+id/countText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
         android:text="Счет"
         android:textColor="@color/black"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.588"
-        app:layout_constraintStart_toEndOf="@+id/countImage"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.748" />
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subgroupEdit"
+        app:layout_constraintVertical_bias="0.129" />
 
     <ImageView
         android:id="@+id/classroomImage"
-        android:layout_width="123dp"
-        android:layout_height="124dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395"
+        app:layout_constraintTop_toBottomOf="@+id/lessonImage"
+        app:layout_constraintVertical_bias="0.037"
         app:srcCompat="@drawable/classroom" />
 
     <ImageView
         android:id="@+id/lessonImage"
-        android:layout_width="126dp"
-        android:layout_height="119dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179"
+        app:layout_constraintTop_toBottomOf="@+id/label"
+        app:layout_constraintVertical_bias="0.022"
         app:srcCompat="@drawable/lesson" />
 
     <EditText
@@ -54,10 +53,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintHorizontal_bias="0.325"
         app:layout_constraintStart_toEndOf="@+id/classroomImage"
         app:layout_constraintTop_toBottomOf="@+id/classroomText"
-        app:layout_constraintVertical_bias="0.039" />
+        app:layout_constraintVertical_bias="0.048" />
 
     <EditText
         android:id="@+id/countEdit"
@@ -67,10 +66,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintHorizontal_bias="0.345"
         app:layout_constraintStart_toEndOf="@+id/countImage"
         app:layout_constraintTop_toBottomOf="@+id/countText"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.105" />
 
     <TextView
         android:id="@+id/lessonText"
@@ -82,10 +81,10 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintHorizontal_bias="0.776"
         app:layout_constraintStart_toEndOf="@+id/lessonImage"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17" />
+        app:layout_constraintTop_toBottomOf="@+id/label"
+        app:layout_constraintVertical_bias="0.019" />
 
     <EditText
         android:id="@+id/subgroupEdit"
@@ -97,10 +96,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintHorizontal_bias="0.622"
         app:layout_constraintStart_toEndOf="@+id/subgroupImage"
         app:layout_constraintTop_toBottomOf="@+id/subgroupText"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.284" />
 
     <TextView
         android:id="@+id/classroomText"
@@ -111,10 +110,10 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toEndOf="@+id/classroomImage"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintTop_toBottomOf="@+id/lessonEdit"
+        app:layout_constraintVertical_bias="0.052" />
 
     <EditText
         android:id="@+id/lessonEdit"
@@ -139,10 +138,10 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toEndOf="@+id/subgroupImage"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562" />
+        app:layout_constraintTop_toBottomOf="@+id/classroomEdit"
+        app:layout_constraintVertical_bias="0.081" />
 
     <TextView
         android:id="@+id/label"
@@ -156,7 +155,8 @@
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.04" />
+
     <LinearLayout
         android:id="@+id/Down"
         android:layout_width="match_parent"
@@ -204,21 +204,44 @@
 
     <ImageView
         android:id="@+id/subgroupImage"
-        android:layout_width="123dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="372dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classroomImage"
         app:srcCompat="@drawable/split" />
 
     <ImageView
         android:id="@+id/countImage"
-        android:layout_width="124dp"
-        android:layout_height="127dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="512dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subgroupImage"
         app:srcCompat="@drawable/counter" />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/codeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Код старосты"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

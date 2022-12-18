@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 while ((line = reader.readLine()) != null) {
                     result.append(line);
                 }
-                return result.toString(); //значит только пермиссия на интернет нужна была!
+                return result.toString();
 
             } catch (Exception exception) {
                 return null;
