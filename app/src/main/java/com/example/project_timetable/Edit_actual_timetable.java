@@ -1,5 +1,7 @@
 package com.example.project_timetable;
 
+import static java.lang.Integer.parseInt;
+
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
@@ -66,8 +68,6 @@ public class Edit_actual_timetable extends AppCompatActivity implements View.OnC
         Change.setOnClickListener(this);
         Intent intent = getIntent();
 
-        String Actual_timetable = intent.getStringExtra("base");
-        Count.setText(Actual_timetable);
         showAll();
 
     }
@@ -105,9 +105,10 @@ public class Edit_actual_timetable extends AppCompatActivity implements View.OnC
             ConectionHellper conectionHellper = new ConectionHellper();
             connection = conectionHellper.connectionClass();
             Intent intent = getIntent();
-            String Base = intent.getStringExtra("actual_timetable");
+            String id = (intent.getStringExtra("actual_timetable"));
+            String a=id;
             if (connection != null) {
-                String query11 = "select Id_lesson from Actual_timetable where Count = '" + Base + "'";
+                String query11 = "select Id_lesson from Actual_timetable where Count = '" + id + "'";
                 Statement statement11 = connection.createStatement();
                 ResultSet resultSet11 = statement11.executeQuery(query11);
                 int i = 0;
@@ -115,7 +116,7 @@ public class Edit_actual_timetable extends AppCompatActivity implements View.OnC
                 {
                     i=resultSet11.getInt(1);
                 }
-                String query12 = "update Actual_timetable set Lesson = '" + Lesson + "', Classroom ='" + Classroom + "',Subgroup =" + Subgroup + ", Count = '"+ Count +"' where Id_lesson = "+i+"";
+                String query12 = "update Actual_timetable set Lesson = '" + Lesson + "', Classroom ='" + Classroom + "',Subgroup ='" + Subgroup + "', Count = '"+ Count +"' where Id_lesson = "+id+"";
                 Statement statement12 = connection.createStatement();
                 statement12.execute(query12);
                 finish();

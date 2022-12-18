@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private Adapder_actual pAdapter;
     ListView listView;
     public static int keyID;
+    String a;
     private List<mask_actual> listProduct = new ArrayList<>();
 
     @Override
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 keyID = (int) id;
+                a= String.valueOf(id);
                 Go();
             }
         });
@@ -89,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
                             productJson.getString("Count")
 
                     );
-
                     listProduct.add(tempProduct);
                     pAdapter.notifyDataSetInvalidated();
                 }
@@ -124,6 +125,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void Go() {
-        startActivity(new Intent(this, Edit_actual_timetable.class));
+        Intent intent = new Intent(this, Edit_actual_timetable.class);
+        intent.putExtra("actual_timetable",a);
+        startActivity(intent);
     }
 }
